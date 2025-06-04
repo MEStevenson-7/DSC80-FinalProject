@@ -1,1 +1,209 @@
-DSC 80 UCSD final project. An analysis of recipe data to uncover relationship between recipe diffuculty and ratings these recipes receive. 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Ratings and Simplicity Analysis</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1, h2, h3 {
+      color: #004080;
+    }
+    code {
+      background: #eaeaea;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .section {
+      margin-bottom: 3rem;
+    }
+    .plot, .table {
+      background-color: white;
+      padding: 1rem;
+      border: 1px solid #ccc;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Recipe Ratings and Simplicity Analysis</h1>
+
+  <div class="section" id="introduction">
+    <h2>Introduction</h2>
+    <p>Our dataset contains information on recipes including variables of interest such as the number of reviews for each unique recipe, ratings (scored from 2-5), average ratings, and the number of steps to complete the recipe. We aim to investigate people’s preferences for different recipes using ratings as a proxy for preference, and how these preferences relate to the complexity of a recipe.</p>
+
+    <p>We define complexity using the number of steps, time, and number of ingredients. Our goal is to understand if people tend to prefer simpler (easier) recipes and whether these receive higher average ratings. This analysis may help identify high-quality, easy-to-make recipes that maximize satisfaction while minimizing effort.</p>
+
+    <p>The dataset includes <strong>234,429</strong> rows (individual reviews of recipes) and 17 columns. We focus on 7 of these columns:</p>
+    <ul>
+      <li><code>name</code> (string): name of the recipe</li>
+      <li><code>id</code> (int): unique recipe ID</li>
+      <li><code>minutes</code> (int): total time in minutes</li>
+      <li><code>n_steps</code> (int): number of steps to complete</li>
+      <li><code>n_ingredients</code> (int): number of ingredients</li>
+      <li><code>rating</code> (int): rating given in a review</li>
+      <li><code>average_rating</code> (float): average rating per recipe</li>
+    </ul>
+  </div>
+
+  <div class="section" id="data-cleaning">
+    <h2>Data Cleaning and Exploratory Data Analysis</h2>
+    <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). Recipes without ratings have missing values in the rating column. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame.</p>
+
+    <p>Additional cleaning steps:</p>
+    <ul>
+      <li>Converted <code>submitted</code> and <code>date</code> columns to datetime objects</li>
+      <li>Parsed <code>tags</code>, <code>nutrition</code>, <code>steps</code>, and <code>ingredients</code> from string to list using <code>eval()</code></li>
+      <li>Converted <code>rating</code> column to <code>Int8</code> for efficiency</li>
+      <li>Dropped irrelevant columns like <code>nutrition</code> and <code>date</code></li>
+    </ul>
+
+    <div class="table">
+      <!-- INSERT HEAD OF DATAFRAME HERE -->
+      <p><em>Head of cleaned DataFrame goes here</em></p>
+    </div>
+  </div>
+
+  <div class="section" id="univariate-analysis">
+    <h2>Univariate Analysis</h2>
+    <h3>Number of Steps Distribution</h3>
+    <p>The number of steps is approximately normally distributed with a mean around 11 and a right-skewed tail, indicating most recipes range from 9 to 13 steps.</p>
+
+    <div class="plot">
+      <!-- INSERT DISTRIBUTION PLOT OF n_steps HERE -->
+      <p><em>Number of steps distribution plot goes here</em></p>
+    </div>
+  </div>
+
+  <div class="section" id="bivariate-analysis">
+    <h2>Bivariate Analysis</h2>
+
+    <h3>Binned Number of Ingredients vs. Average Rating</h3>
+    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
+    <div class="plot"><p><em>Insert plot here</em></p></div>
+
+    <h3>Binned Minutes vs. Average Rating</h3>
+    <p>No clear relationship is observed between time required and rating.</p>
+    <div class="plot"><p><em>Insert plot here</em></p></div>
+
+    <h3>Interesting Aggregates</h3>
+    <h4>Pivot Table: Number of Steps vs. Ratings</h4>
+    <p>Ratings do not consistently rise or fall with number of steps, suggesting no strong effect.</p>
+    <div class="table"><p><em>Insert steps vs. ratings pivot table here</em></p></div>
+
+    <h4>Pivot Table: Number of Ingredients vs. Ratings</h4>
+    <p>Similarly, ingredient count shows no consistent correlation with rating.</p>
+    <div class="table"><p><em>Insert ingredients vs. ratings pivot table here</em></p></div>
+  </div>
+
+  <div class="section" id="missingness">
+    <h2>Assessment of Missingness</h2>
+    <p>Columns <code>rating</code>, <code>review</code>, and <code>description</code> have missing values.</p>
+
+    <ul>
+      <li><strong>Rating:</strong> Likely NMAR – users who disliked a recipe might be less inclined to leave a rating.</li>
+      <li><strong>Review:</strong> Also likely NMAR – may correlate with user satisfaction or emotional investment.</li>
+      <li><strong>Description:</strong> Likely MAR – possibly missing more often in simple recipes.</li>
+    </ul>
+
+    <h3>Missingness Dependency</h3>
+    <h4>Permutation Test: Rating vs. Review Missingness</h4>
+    <p>No significant difference – review missingness is likely not dependent on rating.</p>
+    <div class="plot"><p><em>Insert plot here</em></p></div>
+
+    <h4>Permutation Test: n_steps vs. Review Missingness</h4>
+    <p>Significant difference – recipes with reviews have fewer steps. Suggests MAR based on complexity.</p>
+    <div class="plot"><p><em>Insert plot here</em></p></div>
+  </div>
+
+  <div class="section" id="hypothesis-testing">
+    <h2>Hypothesis Testing</h2>
+    <p><strong>Question:</strong> Do simpler recipes (fewer ingredients) get higher ratings?</p>
+
+    <h3>Hypotheses</h3>
+    <ul>
+      <li>H₀: No difference in average ratings between simple and complex recipes</li>
+      <li>H₁: Simple recipes have higher average ratings</li>
+    </ul>
+
+    <h3>Test Setup</h3>
+    <ul>
+      <li>Simple = fewer ingredients than dataset median</li>
+      <li>Test statistic = difference in mean ratings</li>
+      <li>Permutation test (1,000 iterations)</li>
+      <li>One-sided test</li>
+    </ul>
+
+    <h3>Results</h3>
+    <ul>
+      <li>Observed difference: 0.0072</li>
+      <li>p-value: 0.0000</li>
+    </ul>
+
+    <p><strong>Conclusion:</strong> Reject H₀. Simpler recipes have statistically higher average ratings, although effect size is small.</p>
+  </div>
+
+  <div class="section" id="prediction">
+    <h2>Framing a Prediction Problem</h2>
+
+    <h3>Prediction Type</h3>
+    <p>Regression problem — predicting numerical <code>rating</code>.</p>
+
+    <h3>Target Variable</h3>
+    <p><code>rating</code>: numerical score (1–5) given by users.</p>
+
+    <h3>Evaluation Metric</h3>
+    <p>Root Mean Squared Error (RMSE) — penalizes large errors, interpretable in same units.</p>
+
+    <h3>Features Used (No Leakage)</h3>
+    <ul>
+      <li><code>minutes</code></li>
+      <li><code>n_steps</code></li>
+      <li><code>n_ingredients</code></li>
+    </ul>
+  </div>
+
+  <div class="section" id="baseline-model">
+    <h2>Baseline Model</h2>
+    <p>Model used: Linear Regression with 3 quantitative features. All features were already numeric, no encoding required.</p>
+    <p>Performance: RMSE = [insert value here]</p>
+    <p>Model is a reasonable baseline; interpretability and simplicity are advantages, but it may underfit.</p>
+  </div>
+
+  <div class="section" id="final-model">
+    <h2>Final Model</h2>
+    <p>Final model used: [e.g. Random Forest, Gradient Boosting]</p>
+    <p>New features added: [e.g. interaction terms, polynomial transformations]</p>
+    <p>Rationale: These features better capture non-linear effects and interactions.</p>
+    <p>Hyperparameter tuning via [e.g. GridSearchCV].</p>
+    <p>Improved RMSE: [insert new value]</p>
+
+    <div class="plot"><p><em>Insert model performance plot here</em></p></div>
+  </div>
+
+  <div class="section" id="fairness">
+    <h2>Fairness Analysis</h2>
+    <p><strong>Group X:</strong> Recipes with fewer than median ingredients</p>
+    <p><strong>Group Y:</strong> Recipes with greater than or equal to median ingredients</p>
+    <p><strong>Metric:</strong> Mean predicted rating</p>
+    <p><strong>Hypotheses:</strong></p>
+    <ul>
+      <li>H₀: No difference in prediction accuracy or error across groups</li>
+      <li>H₁: Prediction error is systematically different between groups</li>
+    </ul>
+    <p>Test statistic: Difference in RMSE between groups</p>
+    <p>p-value: [insert value]</p>
+    <p><strong>Conclusion:</strong> [insert conclusion about fairness]</p>
+
+    <div class="plot"><p><em>Insert fairness visualization here</em></p></div>
+  </div>
+
+</body>
+</html>
