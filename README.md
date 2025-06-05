@@ -12,9 +12,6 @@
       background-color: #f9f9f9;
       color: #fffdfd;
     }
-    h1 {
-      background-color: #ffffff;
-    }
     h1, h2, h3 {
       color:rgb(71, 124, 177);
     }
@@ -135,49 +132,69 @@
 
   <div class="section" id="univariate-analysis">
     <h2>Univariate Analysis</h2>
-    <div class="plot">
     <h3>Distribution of Minutes</h3>
     <p>The distribution is heavily concentrated on lower values with the mode being much less than the mean. It seems most recipes take less time than the mean, while some outliers taking much more time.</p>
+    <div class="plot">
     <iframe 
     src="plot/mins_distribution.html"
     width="100%"
     height="600"
     frameborder="0"
     ></iframe>
+    </div>
     <h3>Distribution of the Number of Ingredients</h3>
     <p>The number of ingredients seem to have a bell-shaped curve. The number of ingredients seem to be normally distributed.</p>
+    <div class="plot">
     <iframe 
     src="plot/ing_distribution.html"
     width="100%"
     height="600"
     frameborder="0"
     ></iframe>
+    </div>
     <h3>Number of Steps Distribution</h3>
     <p>The number of steps is approximately normally distributed with a mean of 10.02 and a right-skewed tail.</p>
+    <div class="plot">
     <iframe 
     src="plot/steps_distribution.html"
     width="100%"
     height="600"
     frameborder="0"
     ></iframe>
-  </div>
+    </div>
   </div>
 
   <div class="section" id="bivariate-analysis">
     <h2>Bivariate Analysis</h2>
-    <div class=plot>
-    <h3>Binned Number of Ingredients vs. Average Rating</h3>
+    <h3>Number of Ingredients vs. Rating</h3>
     <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
-    <div class="plot"><p><em>Insert plot here</em></p></div>
+    <div class="plot">
+    <iframe 
+    src="plot/ing_rating.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
+    </div>
     <h3>Minutes vs. Rating</h3>
-    <p>There seems to be a negative correlation between minutes and rating.</p>
+    <p>There does not seem to be a correlation between minutes and rating.</p>
+    <div class="plot">
     <iframe 
     src="plot/min_rating.html"
     width="100%"
     height="600"
     frameborder="0"
     ></iframe>
-    <div class="plot"><p><em>Insert plot here</em></p></div>
+    </div>
+    <h3>Number of Steps vs. Rating</h3>
+    <p>This plot shows a slight positive trend: recipes with more steps tend to receive higher average ratings.</p>
+    <div class="plot">
+    <iframe 
+    src="plot/steps_rating.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
     </div>
     <h3>Interesting Aggregates</h3>
     <h4>Pivot Table: Number of Steps vs. Ratings</h4>
