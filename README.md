@@ -6,7 +6,7 @@
   <title>Recipe Ratings and Simplicity Analysis</title>
   <style>
     body {
-      font-family: Roboto, Open Sans;
+      font-family: Roboto, verdana;
       line-height: 1.6;
       margin: 2rem;
       background-color: #f9f9f9;
@@ -54,12 +54,68 @@
 
   <div class="section" id="data-cleaning">
     <h2>Data Cleaning and Exploratory Data Analysis</h2>
-    <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). We changed ratings of 0 to <code>np.nan</code> in the rating column. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. Lastly, we converted <code>rating</code> column to <code>Int8</code> for efficiency</p>
+    <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). This allowed us to see the ratings of each recipe. We changed ratings of 0 to <code>np.nan</code> in the rating column so it does not skew the average rating for each recipe. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. This helped to see the average rating among all reviews for a specific recipe. Then, we converted <code>rating</code> column to <code>Int8</code> for efficiency.</p>
 
 
     <div class="table">
-      <!-- INSERT HEAD OF DATAFRAME HERE -->
-      <p><em>Head of cleaned DataFrame goes here</em></p>
+      <p>Head of Dataframe:<\p>
+      <table>
+        <tr>
+          <td></td>
+          <td><code>id</code></td>
+          <td><code>minutes</code></td>
+          <td><code>n_steps</code></td>
+          <td><code>n_ingredients</code></td>
+          <td><code>rating</code></td>
+          <td><code>average rating</code></td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>333281</td>
+          <td>40</td>
+          <td>10</td>
+          <td>9</td>
+          <td>4</td>
+          <td>4.0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>453467</td>
+          <td>45</td>
+          <td>12</td>
+          <td>11</td>
+          <td>5</td>
+          <td>5.0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>306168</td>
+          <td>40</td>
+          <td>6</td>
+          <td>9</td>
+          <td>5</td>
+          <td>5.0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>306168</td>
+          <td>40</td>
+          <td>6</td>
+          <td>9</td>
+          <td>5</td>
+          <td>5.0</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>306168</td>
+          <td>40</td>
+          <td>6</td>
+          <td>9</td>
+          <td>5</td>
+          <td>5.0</td>
+        </tr>
+      </table>
+      <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
     </div>
   </div>
 
