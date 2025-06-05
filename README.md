@@ -165,20 +165,24 @@
 
   <div class="section" id="bivariate-analysis">
     <h2>Bivariate Analysis</h2>
-
+    <div class=plot>
     <h3>Binned Number of Ingredients vs. Average Rating</h3>
     <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
     <div class="plot"><p><em>Insert plot here</em></p></div>
-
-    <h3>Binned Minutes vs. Average Rating</h3>
-    <p>No clear relationship is observed between time required and rating.</p>
+    <h3>Minutes vs. Rating</h3>
+    <p>There seems to be a negative correlation between minutes and rating.</p>
+    <iframe 
+    src="plot/min_rating.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
     <div class="plot"><p><em>Insert plot here</em></p></div>
-
+    </div>
     <h3>Interesting Aggregates</h3>
     <h4>Pivot Table: Number of Steps vs. Ratings</h4>
     <p>Ratings do not consistently rise or fall with number of steps, suggesting no strong effect.</p>
     <div class="table"><p><em>Insert steps vs. ratings pivot table here</em></p></div>
-
     <h4>Pivot Table: Number of Ingredients vs. Ratings</h4>
     <p>Similarly, ingredient count shows no consistent correlation with rating.</p>
     <div class="table"><p><em>Insert ingredients vs. ratings pivot table here</em></p></div>
