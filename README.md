@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <title>Recipe Ratings and Simplicity Analysis</title>
   <style>
     body {
@@ -58,6 +59,7 @@
     <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). This allowed us to see the ratings of each recipe. We changed ratings of 0 to <code>np.nan</code> in the rating column so it does not skew the average rating for each recipe. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. This helped to see the average rating among all reviews for a specific recipe. Then, we converted <code>rating</code> column to <code>Int8</code> for efficiency.</p>
 
   <p>Head of Dataframe:</p>
+  <script>
   |     id |   minutes |   n_steps |   n_ingredients |   rating |   average rating |
 |-------:|----------:|----------:|----------------:|---------:|-----------------:|
 | 333281 |        40 |        10 |               9 |        4 |                4 |
@@ -65,6 +67,7 @@
 | 306168 |        40 |         6 |               9 |        5 |                5 |
 | 306168 |        40 |         6 |               9 |        5 |                5 |
 | 306168 |        40 |         6 |               9 |        5 |                5 |
+</script>
   <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
   </div>
 
