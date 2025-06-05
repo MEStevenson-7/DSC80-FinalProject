@@ -236,7 +236,49 @@
     <h3>Interesting Aggregates</h3>
     <h4>Pivot Table: Number of Steps vs. Ratings</h4>
     <p>Ratings do not consistently rise or fall with number of steps, suggesting no strong effect.</p>
-    <div class="table"><p><em>Insert steps vs. ratings pivot table here</em></p></div>
+    <div class="table">
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>average rating</th>
+      <th>rating</th>
+    </tr>
+    <tr>
+      <th>steps_bin</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>(0.901, 20.8]</th>
+      <td>4.676063</td>
+      <td>4.679352</td>
+    </tr>
+    <tr>
+      <th>(20.8, 40.6]</th>
+      <td>4.682909</td>
+      <td>4.687489</td>
+    </tr>
+    <tr>
+      <th>(40.6, 60.4]</th>
+      <td>4.683892</td>
+      <td>4.68682</td>
+    </tr>
+    <tr>
+      <th>(60.4, 80.2]</th>
+      <td>4.825431</td>
+      <td>4.818182</td>
+    </tr>
+    <tr>
+      <th>(80.2, 100.0]</th>
+      <td>4.727273</td>
+      <td>4.72</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
     <h4>Pivot Table: Number of Ingredients vs. Ratings</h4>
     <p>Similarly, ingredient count shows no consistent correlation with rating.</p>
     <div class="table"><p><em>Insert ingredients vs. ratings pivot table here</em></p></div>
