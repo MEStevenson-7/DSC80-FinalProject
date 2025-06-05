@@ -68,6 +68,7 @@
 <body>
   
   <div class="sidebar">
+    <a href="#title">Top</a>
     <a href="#introduction">Introduction</a>
     <a href="#data-cleaning">Data Cleaning</a>
     <a href="#univariate-analysis">Univariate Analysis</a>
