@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <title>Recipe Ratings and Simplicity Analysis</title>
   <style>
     body {
@@ -39,7 +38,7 @@
 
   <div class="section" id="introduction">
     <h2>Introduction</h2>
-    <p>Our dataset contains information on recipes including variables of interest such as minutes for each recipe, the number of reviews for each unique recipe, ratings (scored from 2-5), average ratings, and the number of steps to complete the recipe. We aim to investigate people’s preferences for different recipes using ratings as a proxy for preference, and how these preferences relate to the complexity of a recipe.</p>
+    <p>Our dataset contains information on recipes including variables of interest such as minutes for each recipe, the number of reviews for each unique recipe, ratings (scored from 1-5), average ratings, and the number of steps to complete the recipe. We aim to investigate people’s preferences for different recipes using ratings as a proxy for preference, and how these preferences relate to the complexity of a recipe.</p>
 
     <p>We define complexity using the number of steps, time, and number of ingredients, with lower being easier and higher being more difficult. Our goal is to understand if people tend to prefer simpler (easier) recipes and whether these receive higher average ratings. This analysis may help identify high-quality, easy-to-make recipes that maximize satisfaction while minimizing effort.</p>
 
@@ -59,15 +58,66 @@
     <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). This allowed us to see the ratings of each recipe. We changed ratings of 0 to <code>np.nan</code> in the rating column so it does not skew the average rating for each recipe. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. This helped to see the average rating among all reviews for a specific recipe. Then, we converted <code>rating</code> column to <code>Int8</code> for efficiency.</p>
 
   <p>Head of Dataframe:</p>
-  <script>
-  |     id |   minutes |   n_steps |   n_ingredients |   rating |   average rating |
-|-------:|----------:|----------:|----------------:|---------:|-----------------:|
-| 333281 |        40 |        10 |               9 |        4 |                4 |
-| 453467 |        45 |        12 |              11 |        5 |                5 |
-| 306168 |        40 |         6 |               9 |        5 |                5 |
-| 306168 |        40 |         6 |               9 |        5 |                5 |
-| 306168 |        40 |         6 |               9 |        5 |                5 |
-</script>
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>id</th>
+      <th>minutes</th>
+      <th>n_steps</th>
+      <th>n_ingredients</th>
+      <th>rating</th>
+      <th>average rating</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>333281</td>
+      <td>40</td>
+      <td>10</td>
+      <td>9</td>
+      <td>4</td>
+      <td>4.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>453467</td>
+      <td>45</td>
+      <td>12</td>
+      <td>11</td>
+      <td>5</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>306168</td>
+      <td>40</td>
+      <td>6</td>
+      <td>9</td>
+      <td>5</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>306168</td>
+      <td>40</td>
+      <td>6</td>
+      <td>9</td>
+      <td>5</td>
+      <td>5.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>306168</td>
+      <td>40</td>
+      <td>6</td>
+      <td>9</td>
+      <td>5</td>
+      <td>5.0</td>
+    </tr>
+  </tbody>
+  </table>
   <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
   </div>
 
