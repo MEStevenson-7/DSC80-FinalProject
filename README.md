@@ -71,10 +71,10 @@
   <thead>
     <tr style="text-align: right; color: black">
       <th></th>
-      <th><code>id</code></th>
-      <th><code>minutes</code></th>
-      <th><code>n_steps</code></th>
-      <th><code>n_ingredients</code></th>
+      <th>id</th>
+      <th>minutes</th>
+      <th>n_steps</th>
+      <th>n_ingredients</th>
       <th>rating</th>
       <th>average rating</th>
     </tr>
