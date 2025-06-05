@@ -24,7 +24,7 @@
       margin-bottom: 3rem;
     }
     table {
-      background-color:rgb(84, 207, 255);
+      background-color:rgba(255, 255, 255, 0.8);
       color:rgb(0, 0, 0);
       padding: 1rem;
       border: 1px solid #ccc;
