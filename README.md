@@ -379,21 +379,32 @@
   <div class="section" id="missingness">
     <h2>Assessment of Missingness</h2>
     <p>Columns <code>rating</code>, <code>review</code>, and <code>description</code> have missing values.</p>
-
     <ul>
       <li><strong>Rating:</strong> Likely NMAR – users who disliked a recipe might be less inclined to leave a rating.</li>
       <li><strong>Review:</strong> Also likely NMAR – may correlate with user satisfaction or emotional investment.</li>
       <li><strong>Description:</strong> Likely MAR – possibly missing more often in simple recipes.</li>
     </ul>
-
     <h3>Missingness Dependency</h3>
     <h4>Permutation Test: Rating vs. Review Missingness</h4>
     <p>No significant difference – review missingness is likely not dependent on rating.</p>
-    <div class="plot"><p><em>Insert plot here</em></p></div>
-
-    <h4>Permutation Test: n_steps vs. Review Missingness</h4>
+    <div class="plot">
+    <iframe 
+    src="plot/rating_missing.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
+    </div>
+    <h4>Permutation Test: Number of Steps vs. Review Missingness</h4>
     <p>Significant difference – recipes with reviews have fewer steps. Suggests MAR based on complexity.</p>
-    <div class="plot"><p><em>Insert plot here</em></p></div>
+    <div class="plot">
+    <iframe 
+    src="plot/n_steps_missing.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
+    </div>
   </div>
 
   <div class="section" id="hypothesis-testing">
