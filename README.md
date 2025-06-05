@@ -41,26 +41,25 @@
     }
     /* Fixed sidebar */
     .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100%;
-      background-color: #f0f0f0;
-      padding-top: 20px;
-      border-right: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* translucent black */
+    padding-top: 20px;
+    border-right: 1px solid #ccc;
     }
-    /* Sidebar links */
     .sidebar a {
-      display: block;
-      padding: 10px 15px;
-      text-decoration: none;
-      color: #333;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;       /* white text */
+    font-weight: bold;  /* bold text */
     }
     .sidebar a:hover {
-      background-color: #ddd;
+    background-color: rgba(255, 255, 255, 0.2);
     }
-    /* Page content */
     .content {
       margin-left: 220px; /* space for sidebar */
       padding: 20px;
