@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Recipe Ratings and Simplicity Analysis</title>
+  <title>&#129369 Recipe Ratings and Simplicity Analysis &#129368</title>
   <style>
     body {
       font-family: Roboto, sans-serif;
@@ -31,7 +31,7 @@
       margin: 1rem 0;
     }
     tr:hover {
-      background-color:rgb(236, 236, 236);
+      background-color:rgb(199, 199, 199);
     }
     th {
       color: black !important;
