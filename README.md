@@ -134,14 +134,15 @@
     <h2>Univariate Analysis</h2>
     <div class="plot">
     <h3>Distribution of Minutes</h3>
-    <p>The distribution of minutes taken for a recipe.</p>
+    <p>The distribution is heavily concentrated on lower values. It seems most recipes take less time than the mean.</p>
     <iframe 
     src="plot/mins_distribution.html"
     width="100%"
     height="600"
     frameborder="0"
     ></iframe>
-    <h3>Distribution of the Number of Ingredients Per Recipe</h3>
+    <h3>Distribution of the Number of Ingredients</h3>
+    <p>The number of ingredients seem to have a bell-shaped curve.</p>
     <iframe 
     src="plot/ing_distribution.html"
     width="100%"
@@ -150,7 +151,12 @@
     ></iframe>
     <h3>Number of Steps Distribution</h3>
     <p>The number of steps is approximately normally distributed with a mean around 11 and a right-skewed tail, indicating most recipes range from 9 to 13 steps.</p>
-    <p><em>Number of steps distribution plot goes here</em></p>
+    <iframe 
+    src="plot/steps_distribution.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
   </div>
   </div>
 
