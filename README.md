@@ -34,10 +34,10 @@
       background-color:rgb(236, 236, 236);
     }
     th {
-      color: black !important
+      color: black !important;
     }
     .row_heading {
-      color: black !important
+      color: black !important;
     }
   </style>
 </head>
