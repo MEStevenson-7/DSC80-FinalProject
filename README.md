@@ -70,9 +70,9 @@
   <div class="sidebar">
     <a href="#top">&#57398; Back to Top</a>
     <a href="#introduction">&#128075; Introduction</a>
-    <a href="#data-cleaning">Data Cleaning</a>
-    <a href="#univariate-analysis">Univariate Analysis</a>
-    <a href="#bivariate-analysis">Bivariate Analysis</a>
+    <a href="#data-cleaning">&#129529; Data Cleaning</a>
+    <a href="#univariate-analysis">&#128202; Univariate Analysis</a>
+    <a href="#bivariate-analysis">&#128200; Bivariate Analysis</a>
     <a href="#missingness">Assessment of Missingness</a>
     <a href="#hypothesis-testing">Hypothesis Testing</a>
     <a href="#prediction">Prediction</a>
@@ -101,7 +101,7 @@
   </div>
 
   <div class="section" id="data-cleaning">
-    <h2>Data Cleaning and Exploratory Data Analysis</h2>
+    <h2>&#129529; Data Cleaning and Exploratory Data Analysis</h2>
     <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). This allowed us to see the ratings of each recipe. We changed ratings of 0 to <code>np.nan</code> in the rating column so it does not skew the average rating for each recipe. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. This helped to see the average rating among all reviews for a specific recipe. Then, we converted <code>rating</code> column to <code>Int8</code> for efficiency.</p>
 
   <p>Preview of Data:</p>
@@ -169,7 +169,7 @@
   </div>
 
   <div class="section" id="univariate-analysis">
-    <h2>Univariate Analysis</h2>
+    <h2>&#128202; Univariate Analysis</h2>
     <h3>Distribution of Minutes</h3>
     <p>The distribution is heavily concentrated on lower values with the mode being much less than the mean. It seems most recipes take less time than the mean, while some outliers taking much more time.</p>
     <div class="plot">
@@ -203,7 +203,7 @@
   </div>
 
   <div class="section" id="bivariate-analysis">
-    <h2>Bivariate Analysis</h2>
+    <h2>&#128200; Bivariate Analysis</h2>
     <h3>Number of Ingredients vs. Rating</h3>
     <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
     <div class="plot">
