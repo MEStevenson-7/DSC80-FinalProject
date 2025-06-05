@@ -31,7 +31,7 @@
       margin: 1rem 0;
     }
     tr:hover {
-      background-color:rgb(199, 199, 199);
+      background-color:rgb(236, 236, 236);
     }
   </style>
 </head>
@@ -63,7 +63,7 @@
   <p>Preview of Data:</p>
   <table class="df">
   <thead>
-    <tr style="text-align: right;">
+    <tr style="text-align: right; color: black">
       <th></th>
       <th>id</th>
       <th>minutes</th>
