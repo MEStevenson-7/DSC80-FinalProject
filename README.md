@@ -2,7 +2,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <div id="top"></div>
   <title> Recipe Ratings and Simplicity Analysis </title>
   <style>
     body {
@@ -69,8 +68,8 @@
 <body>
   
   <div class="sidebar">
-    <a href="#top">&#57398;Back to Top</a>
-    <a href="#introduction">&#128075;Introduction</a>
+    <a href="#top">&#57398; Back to Top</a>
+    <a href="#introduction">&#128075; Introduction</a>
     <a href="#data-cleaning">Data Cleaning</a>
     <a href="#univariate-analysis">Univariate Analysis</a>
     <a href="#bivariate-analysis">Bivariate Analysis</a>
@@ -81,6 +80,7 @@
     <a href="#final-model">Final Model</a>
     <a href="#fairness">Fairness</a>
   </div>
+  <div id="top"></div>
   <h1>&#129369; Recipe Ratings and Simplicity Analysis &#129368;</h1>
 
   <div class="section" id="introduction">
