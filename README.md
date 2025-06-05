@@ -6,7 +6,7 @@
   <title>Recipe Ratings and Simplicity Analysis</title>
   <style>
     body {
-      font-family: Roboto, Open Sans;
+      font-family: Roboto, sans-serif;
       line-height: 1.6;
       margin: 2rem;
       background-color: #f9f9f9;
@@ -97,7 +97,7 @@
           <td>5.0</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td>3</td>
           <td>306168</td>
           <td>40</td>
           <td>6</td>
@@ -106,7 +106,7 @@
           <td>5.0</td>
         </tr>
         <tr>
-          <td>2</td>
+          <td>4</td>
           <td>306168</td>
           <td>40</td>
           <td>6</td>
