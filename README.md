@@ -70,21 +70,19 @@
 
   <div class="section" id="univariate-analysis">
     <h2>Univariate Analysis</h2>
+    <div class="plot">
     <h3>Distribution of Minutes</h3>
+    <p>The distribution of minutes taken for a recipe.</p>
     <iframe 
     src="plots/mins_distribution.html"
-    width="600"
+    width="100%"
     height="600"
     frameborder="0"
-    style="text-align:center"
     ></iframe>
     <h3>Number of Steps Distribution</h3>
     <p>The number of steps is approximately normally distributed with a mean around 11 and a right-skewed tail, indicating most recipes range from 9 to 13 steps.</p>
-
-    <div class="plot">
-      <!-- INSERT DISTRIBUTION PLOT OF n_steps HERE -->
-      <p><em>Number of steps distribution plot goes here</em></p>
-    </div>
+    <p><em>Number of steps distribution plot goes here</em></p>
+  </div>
   </div>
 
   <div class="section" id="bivariate-analysis">
