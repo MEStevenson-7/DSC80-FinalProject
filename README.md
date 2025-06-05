@@ -23,7 +23,7 @@
     .section {
       margin-bottom: 3rem;
     }
-    .plot, table {
+    table {
       background-color: #fffdfd;
       color:rgb(0, 0, 0);
       padding: 1rem;
