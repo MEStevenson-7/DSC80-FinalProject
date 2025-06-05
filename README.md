@@ -69,8 +69,8 @@
 <body>
   
   <div class="sidebar">
-    <a href="#top">Back to Top</a>
-    <a href="#introduction">Introduction</a>
+    <a href="#top">&#57398;Back to Top</a>
+    <a href="#introduction">&#128075;Introduction</a>
     <a href="#data-cleaning">Data Cleaning</a>
     <a href="#univariate-analysis">Univariate Analysis</a>
     <a href="#bivariate-analysis">Bivariate Analysis</a>
