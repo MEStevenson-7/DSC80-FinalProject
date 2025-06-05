@@ -59,7 +59,7 @@
 
 
   <div id="table">
-    <p>Head of Dataframe:<\p>
+    <p>Head of Dataframe:</p>
     <table>
       <tr>
         <td></td>
@@ -116,8 +116,8 @@
         <td>5.0</td>
       </tr>
     </table>
-    <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
-    </div>
+  <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
+  </div>
   </div>
 
   <div class="section" id="univariate-analysis">
