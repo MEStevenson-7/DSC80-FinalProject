@@ -73,6 +73,12 @@
     <a href="#data-cleaning">Data Cleaning</a>
     <a href="#univariate-analysis">Univariate Analysis</a>
     <a href="#bivariate-analysis">Bivariate Analysis</a>
+    <a href="#missingness">Assessment of Missingness</a>
+    <a href="#hypothesis-testing">Hypothesis Testing</a>
+    <a href="#prediction">Prediction</a>
+    <a href="#baseline-model">Baseline Model</a>
+    <a href="#final-model">Final Model</a>
+    <a href="#fairness">Fairness</a>
   </div>
   <h1>Recipe Ratings and Simplicity Analysis</h1>
 
