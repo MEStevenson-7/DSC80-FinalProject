@@ -10,7 +10,7 @@
       line-height: 1.6;
       margin: 2rem;
       background-color: #f9f9f9;
-      color:rgb(255, 255, 255);
+      color: #fffdfd;
     }
     h1, h2, h3 {
       color:rgb(71, 124, 177);
