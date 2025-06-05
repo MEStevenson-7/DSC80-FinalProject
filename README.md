@@ -12,6 +12,9 @@
       background-color: #f9f9f9;
       color: #fffdfd;
     }
+    h1 {
+      background-color: #ffffff;
+    }
     h1, h2, h3 {
       color:rgb(71, 124, 177);
     }
