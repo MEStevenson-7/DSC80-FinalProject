@@ -15,6 +15,16 @@
       scroll-snap-type: y mandatory;
       overflow-y: scroll;
     }
+    h2 {
+      height: 100vh; /* Full screen */
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      scroll-snap-align: start;
+      color: white;
+    }
     h1, h2, h3 {
       color:rgb(71, 124, 177);
     }
