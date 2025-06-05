@@ -24,7 +24,7 @@
       margin-bottom: 3rem;
     }
     .plot, .table {
-      background-color: white;
+      background-color: rgba(99, 99, 99, 0.45);
       padding: 1rem;
       border: 1px solid #ccc;
       margin: 1rem 0;
