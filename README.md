@@ -6,7 +6,7 @@
   <title>Recipe Ratings and Simplicity Analysis</title>
   <style>
     body {
-      font-family: Roboto, verdana;
+      font-family: Roboto, sans-serif;
       line-height: 1.6;
       margin: 2rem;
       background-color: #f9f9f9;
