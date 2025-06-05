@@ -39,7 +39,7 @@
     <h2>Introduction</h2>
     <p>Our dataset contains information on recipes including variables of interest such as minutes for each recipe, the number of reviews for each unique recipe, ratings (scored from 2-5), average ratings, and the number of steps to complete the recipe. We aim to investigate people’s preferences for different recipes using ratings as a proxy for preference, and how these preferences relate to the complexity of a recipe.</p>
 
-    <p>We define complexity using the number of steps, time, and number of ingredients. Our goal is to understand if people tend to prefer simpler (easier) recipes and whether these receive higher average ratings. This analysis may help identify high-quality, easy-to-make recipes that maximize satisfaction while minimizing effort.</p>
+    <p>We define complexity using the number of steps, time, and number of ingredients, with lower being easier and higher being more difficult. Our goal is to understand if people tend to prefer simpler (easier) recipes and whether these receive higher average ratings. This analysis may help identify high-quality, easy-to-make recipes that maximize satisfaction while minimizing effort.</p>
 
     <p>The dataset includes <strong>234,429</strong> rows (individual reviews of recipes) and 17 columns. We focus on 7 of these columns:</p>
     <ul>
@@ -54,15 +54,8 @@
 
   <div class="section" id="data-cleaning">
     <h2>Data Cleaning and Exploratory Data Analysis</h2>
-    <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). Recipes without ratings have missing values in the rating column. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame.</p>
+    <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). We changed ratings of 0 to <code>np.nan</code> in the rating column. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. Lastly, we converted <code>rating</code> column to <code>Int8</code> for efficiency</p>
 
-    <p>Additional cleaning steps:</p>
-    <ul>
-      <li>Converted <code>submitted</code> and <code>date</code> columns to datetime objects</li>
-      <li>Parsed <code>tags</code>, <code>nutrition</code>, <code>steps</code>, and <code>ingredients</code> from string to list using <code>eval()</code></li>
-      <li>Converted <code>rating</code> column to <code>Int8</code> for efficiency</li>
-      <li>Dropped irrelevant columns like <code>nutrition</code> and <code>date</code></li>
-    </ul>
 
     <div class="table">
       <!-- INSERT HEAD OF DATAFRAME HERE -->
