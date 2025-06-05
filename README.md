@@ -6,11 +6,11 @@
   <title>Recipe Ratings and Simplicity Analysis</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: Roboto, sans-serif;
       line-height: 1.6;
       margin: 2rem;
       background-color: #f9f9f9;
-      color: #333;
+      color: #fffdfd;
     }
     h1, h2, h3 {
       color: #004080;
