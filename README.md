@@ -13,10 +13,10 @@
       color: #fffdfd;
     }
     h1, h2, h3 {
-      color: #004080;
+      color:rgb(71, 124, 177);
     }
     code {
-      background: #eaeaea;
+      background:rgba(99, 99, 99, 0.45);
       padding: 2px 4px;
       border-radius: 4px;
     }
