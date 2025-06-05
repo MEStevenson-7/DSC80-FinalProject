@@ -2,6 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <div id="top"></div>
   <title>&#129369; Recipe Ratings and Simplicity Analysis &#129368;</title>
   <style>
     body {
@@ -68,7 +69,7 @@
 <body>
   
   <div class="sidebar">
-    <a href="#title">Top</a>
+    <a href="#top">Back to Top</a>
     <a href="#introduction">Introduction</a>
     <a href="#data-cleaning">Data Cleaning</a>
     <a href="#univariate-analysis">Univariate Analysis</a>
