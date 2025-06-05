@@ -23,12 +23,15 @@
     .section {
       margin-bottom: 3rem;
     }
-    .plot, .table {
+    .plot, table {
       background-color: #fffdfd;
       color:rgb(0, 0, 0);
       padding: 1rem;
       border: 1px solid #ccc;
       margin: 1rem 0;
+    }
+    tr:hover {
+      background-color:rgb(199, 199, 199);
     }
   </style>
 </head>
