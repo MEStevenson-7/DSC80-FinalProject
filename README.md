@@ -10,6 +10,10 @@
       margin: 2rem;
       background-color: #f9f9f9;
       color: #fffdfd;
+      scroll-behavior: smooth;
+      height: 100%;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
     }
     h1, h2, h3 {
       color:rgb(71, 124, 177);
