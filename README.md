@@ -57,8 +57,8 @@
     <h2>Data Cleaning and Exploratory Data Analysis</h2>
     <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). This allowed us to see the ratings of each recipe. We changed ratings of 0 to <code>np.nan</code> in the rating column so it does not skew the average rating for each recipe. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. This helped to see the average rating among all reviews for a specific recipe. Then, we converted <code>rating</code> column to <code>Int8</code> for efficiency.</p>
 
-  <p>Head of Dataframe:</p>
-  <table border="1" class="dataframe">
+  <p>Preview of Data:</p>
+  <table class="df">
   <thead>
     <tr style="text-align: right;">
       <th></th>
