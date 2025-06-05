@@ -59,63 +59,13 @@
 
 
   <div id="table">
-    <p>Head of Dataframe:</p>
-    <table>
-      <tr>
-        <td></td>
-        <td><code>id</code></td>
-        <td><code>minutes</code></td>
-        <td><code>n_steps</code></td>
-        <td><code>n_ingredients</code></td>
-        <td><code>rating</code></td>
-        <td><code>average rating</code></td>
-      </tr>
-      <tr>
-        <td>0</td>
-        <td>333281</td>
-        <td>40</td>
-        <td>10</td>
-        <td>9</td>
-        <td>4</td>
-        <td>4.0</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>453467</td>
-        <td>45</td>
-        <td>12</td>
-        <td>11</td>
-        <td>5</td>
-        <td>5.0</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>306168</td>
-        <td>40</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5.0</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>306168</td>
-        <td>40</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5.0</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>306168</td>
-        <td>40</td>
-        <td>6</td>
-        <td>9</td>
-        <td>5</td>
-        <td>5.0</td>
-      </tr>
-    </table>
+  | | <code>id</code> | <code>minutes</code> | <code>n_steps</code> | <code>n_ingredients</code> | <code>rating</code> | <code>average rating</code> |
+  | --- | --- | --- | --- | --- | --- | --- |
+  | 0 | 333281 | 40 | 10 | 9 | 4 | 4.0 |
+  | 1 | 453467 | 45 | 12 | 11 | 5 | 5.0 |
+  | 2 | 306168 | 40 | 6 | 9 | 5 | 5.0 |
+  | 3 | 306168 | 40 | 6 | 9 | 5 | 5.0 |
+  | 4 | 306168 | 40 | 6 | 9 | 5 | 5.0 |
   <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
   </div>
   </div>
