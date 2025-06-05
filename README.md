@@ -25,6 +25,7 @@
     }
     .plot, .table {
       background-color: rgba(99, 99, 99, 0.45);
+      color: white;
       padding: 1rem;
       border: 1px solid #ccc;
       margin: 1rem 0;
