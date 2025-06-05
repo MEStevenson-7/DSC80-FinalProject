@@ -73,7 +73,7 @@
     <h3>Distribution of Minutes</h3>
     <iframe 
     src="plots/mins_distribution.html"
-    width="800"
+    width="600"
     height="600"
     frameborder="0"
     style="text-align:center"
