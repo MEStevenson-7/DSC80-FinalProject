@@ -136,7 +136,7 @@
     <h3>Distribution of Minutes</h3>
     <p>The distribution of minutes taken for a recipe.</p>
     <iframe 
-    src="plots/mins_distribution.html"
+    src="plot/mins_distribution.html"
     width="100%"
     height="600"
     frameborder="0"
