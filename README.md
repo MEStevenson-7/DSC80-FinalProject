@@ -39,10 +39,42 @@
     .row_heading {
       color: black !important;
     }
+    /* Fixed sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: #f0f0f0;
+      padding-top: 20px;
+      border-right: 1px solid #ccc;
+    }
+    /* Sidebar links */
+    .sidebar a {
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+      color: #333;
+    }
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+    /* Page content */
+    .content {
+      margin-left: 220px; /* space for sidebar */
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
-
+  
+  <div class="sidebar">
+    <a href="#introduction">Introduction</a>
+    <a href="#data-cleaning">Data Cleaning</a>
+    <a href="#univariate-analysis">Univariate Analysis</a>
+    <a href="#bivariate-analysis">Bivariate Analysis</a>
+  </div>
   <h1>Recipe Ratings and Simplicity Analysis</h1>
 
   <div class="section" id="introduction">
