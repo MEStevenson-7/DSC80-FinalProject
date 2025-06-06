@@ -634,7 +634,23 @@
       </tbody>
     </table>
     </div>
-    <p>Hyperparameter tuning via [e.g. GridSearchCV].</p>
+    <p>Hyperparameter tuning via:
+      <ul>
+        <li><strong>RandomForest:</strong>
+        <ul>
+          <li>max depth: 7</li>
+          <li>number of estimators: 46</li>
+        </ul>
+        </li>
+        <li><strong>DecisionTree:</strong>
+        <ul>
+          <li>max depth: 7</li>
+          <li>minimum samples split: 8</li>
+        </ul>
+        </li>
+        <li><strong>LinearRegression:</strong> none</li> 
+      </ul>
+    </p>
     <p>Improved RMSE: [insert new value]</p>
     <div class="plot"><p><em>Insert model performance plot here</em></p></div>
   </div>
