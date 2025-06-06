@@ -133,6 +133,7 @@
     <p>We merged the <code>recipes</code> and <code>ratings</code> datasets on the <code>id</code> column (left join). This allowed us to see the ratings of each recipe. We changed ratings of 0 to <code>np.nan</code> in the rating column so it does not skew the average rating for each recipe. We computed <code>average_rating</code> by grouping by recipe ID and averaging all corresponding ratings, then merged this back into our main DataFrame. This helped to see the average rating among all reviews for a specific recipe. Then, we converted <code>rating</code> column to <code>Int8</code> for efficiency.</p>
 
   <p>Preview of Data:</p>
+  <div class="table>
   <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right; color: black">
@@ -193,6 +194,7 @@
     </tr>
   </tbody>
   </table>
+  </div>
   <p>Duplicate columns are not dropped, because the <code>rating</code> column still records individual ratings per review, which will be used in later analyis.</p>
   </div>
 
@@ -276,142 +278,142 @@
     <p>Ratings do not consistently rise or fall with number of steps, suggesting no strong effect.</p>
     <div class="table">
     <table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>average rating</th>
-      <th>rating</th>
-    </tr>
-    <tr>
-      <th>steps_bin</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>(0.901, 20.8]</th>
-      <td>4.676063</td>
-      <td>4.679352</td>
-    </tr>
-    <tr>
-      <th>(20.8, 40.6]</th>
-      <td>4.682909</td>
-      <td>4.687489</td>
-    </tr>
-    <tr>
-      <th>(40.6, 60.4]</th>
-      <td>4.683892</td>
-      <td>4.68682</td>
-    </tr>
-    <tr>
-      <th>(60.4, 80.2]</th>
-      <td>4.825431</td>
-      <td>4.818182</td>
-    </tr>
-    <tr>
-      <th>(80.2, 100.0]</th>
-      <td>4.727273</td>
-      <td>4.72</td>
-    </tr>
-  </tbody>
-</table>
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>average rating</th>
+          <th>rating</th>
+        </tr>
+        <tr>
+          <th>steps_bin</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>(0.901, 20.8]</th>
+          <td>4.676063</td>
+          <td>4.679352</td>
+        </tr>
+        <tr>
+          <th>(20.8, 40.6]</th>
+          <td>4.682909</td>
+          <td>4.687489</td>
+        </tr>
+        <tr>
+          <th>(40.6, 60.4]</th>
+          <td>4.683892</td>
+          <td>4.68682</td>
+        </tr>
+        <tr>
+          <th>(60.4, 80.2]</th>
+          <td>4.825431</td>
+          <td>4.818182</td>
+        </tr>
+        <tr>
+          <th>(80.2, 100.0]</th>
+          <td>4.727273</td>
+          <td>4.72</td>
+        </tr>
+      </tbody>
+    </table>
     </div>
     <h4>Pivot Table: Number of Ingredients vs. Ratings</h4>
     <p>Similarly, ingredient count shows no consistent correlation with rating. However, there seems to be a quadratic relation with the minimum rating occuring between 8 to 10 ingredients.</p>
     <div class="table">
     <table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>average rating</th>
-      <th>rating</th>
-    </tr>
-    <tr>
-      <th>ingredients_bin</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>(0.964, 3.4]</th>
-      <td>4.724693</td>
-      <td>4.728573</td>
-    </tr>
-    <tr>
-      <th>(3.4, 5.8]</th>
-      <td>4.701702</td>
-      <td>4.706692</td>
-    </tr>
-    <tr>
-      <th>(5.8, 8.2]</th>
-      <td>4.665432</td>
-      <td>4.669343</td>
-    </tr>
-    <tr>
-      <th>(8.2, 10.6]</th>
-      <td>4.660374</td>
-      <td>4.663089</td>
-    </tr>
-    <tr>
-      <th>(10.6, 13.0]</th>
-      <td>4.679133</td>
-      <td>4.682083</td>
-    </tr>
-    <tr>
-      <th>(13.0, 15.4]</th>
-      <td>4.666557</td>
-      <td>4.6671</td>
-    </tr>
-    <tr>
-      <th>(15.4, 17.8]</th>
-      <td>4.672241</td>
-      <td>4.672691</td>
-    </tr>
-    <tr>
-      <th>(17.8, 20.2]</th>
-      <td>4.702077</td>
-      <td>4.707473</td>
-    </tr>
-    <tr>
-      <th>(20.2, 22.6]</th>
-      <td>4.765671</td>
-      <td>4.772025</td>
-    </tr>
-    <tr>
-      <th>(22.6, 25.0]</th>
-      <td>4.767451</td>
-      <td>4.770161</td>
-    </tr>
-    <tr>
-      <th>(25.0, 27.4]</th>
-      <td>4.772905</td>
-      <td>4.781955</td>
-    </tr>
-    <tr>
-      <th>(27.4, 29.8]</th>
-      <td>4.877691</td>
-      <td>4.878788</td>
-    </tr>
-    <tr>
-      <th>(29.8, 32.2]</th>
-      <td>4.857143</td>
-      <td>4.857143</td>
-    </tr>
-    <tr>
-      <th>(32.2, 34.6]</th>
-      <td>5.000000</td>
-      <td>5.0</td>
-    </tr>
-    <tr>
-      <th>(34.6, 37.0]</th>
-      <td>5.000000</td>
-      <td>5.0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>average rating</th>
+          <th>rating</th>
+        </tr>
+        <tr>
+          <th>ingredients_bin</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>(0.964, 3.4]</th>
+          <td>4.724693</td>
+          <td>4.728573</td>
+        </tr>
+        <tr>
+          <th>(3.4, 5.8]</th>
+          <td>4.701702</td>
+          <td>4.706692</td>
+        </tr>
+        <tr>
+          <th>(5.8, 8.2]</th>
+          <td>4.665432</td>
+          <td>4.669343</td>
+        </tr>
+        <tr>
+          <th>(8.2, 10.6]</th>
+          <td>4.660374</td>
+          <td>4.663089</td>
+        </tr>
+        <tr>
+          <th>(10.6, 13.0]</th>
+          <td>4.679133</td>
+          <td>4.682083</td>
+        </tr>
+        <tr>
+          <th>(13.0, 15.4]</th>
+          <td>4.666557</td>
+          <td>4.6671</td>
+        </tr>
+        <tr>
+          <th>(15.4, 17.8]</th>
+          <td>4.672241</td>
+          <td>4.672691</td>
+        </tr>
+        <tr>
+          <th>(17.8, 20.2]</th>
+          <td>4.702077</td>
+          <td>4.707473</td>
+        </tr>
+        <tr>
+          <th>(20.2, 22.6]</th>
+          <td>4.765671</td>
+          <td>4.772025</td>
+        </tr>
+        <tr>
+          <th>(22.6, 25.0]</th>
+          <td>4.767451</td>
+          <td>4.770161</td>
+        </tr>
+        <tr>
+          <th>(25.0, 27.4]</th>
+          <td>4.772905</td>
+          <td>4.781955</td>
+        </tr>
+        <tr>
+          <th>(27.4, 29.8]</th>
+          <td>4.877691</td>
+          <td>4.878788</td>
+        </tr>
+        <tr>
+          <th>(29.8, 32.2]</th>
+          <td>4.857143</td>
+          <td>4.857143</td>
+        </tr>
+        <tr>
+          <th>(32.2, 34.6]</th>
+          <td>5.000000</td>
+          <td>5.0</td>
+        </tr>
+        <tr>
+          <th>(34.6, 37.0]</th>
+          <td>5.000000</td>
+          <td>5.0</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
   </div>
 
   <div class="section" id="missingness">
