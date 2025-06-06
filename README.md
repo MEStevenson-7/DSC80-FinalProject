@@ -695,6 +695,6 @@
     <p><strong>p-value:</strong> 0.0000</p>
     We reject the null in favor of the alternative hypothesis. It seems there may be a difference in prediction error between groups.
   </div>
-
+  
 </body>
 </html>
