@@ -108,7 +108,7 @@
     <a href="#prediction">&#128302; Prediction</a>
     <a href="#baseline-model">&#128218; Baseline Model</a>
     <a href="#final-model">&#128202; Final Model</a>
-    <a href="#fairness">Fairness</a>
+    <a href="#fairness">🤝 Fairness</a>
   </div>
   <div id="top"></div>
   <h1>&#129369; Recipe Ratings and Simplicity Analysis &#129368;</h1>
@@ -671,7 +671,7 @@
   </div>
 
   <div class="section" id="fairness">
-    <h2>Fairness Analysis</h2>
+    <h2>🤝 Fairness Analysis</h2>
     <p><strong>Group X:</strong> Recipes with fewer than median ingredients.</p>
     <p><strong>Group Y:</strong> Recipes with greater than or equal to median ingredients.</p>
     <p><strong>Metric:</strong> Mean predicted rating</p>
