@@ -71,8 +71,8 @@
     background-color: rgba(255, 255, 255, 0.2);
     }
     .right-sidebar img {
-      width: 50px;
-      height: 50px;
+      width: 100%;
+      height: 100%;
       margin: 15px 0;
       border-radius: 5px;
       transition: transform 0.2s;
@@ -107,7 +107,7 @@
 
   <div class="right-sidebar">
     <a href="https://www.food.com/recipe/buttermilk-pancakes-66241">
-      <img src="img/pancakes.webp">Buttermilk Pancakes</img>
+      <img src="img/pancakes.webp"></img>
     </a>
   </div>
 
