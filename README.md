@@ -553,7 +553,7 @@
     <p>New features added: 
       <ul>
         <li><strong>Standard scaled minutes:</strong> We applied StandardScaler to normalize the minutes column. This transformation centers the data to have mean 0 and variance 1, which can help many models (especially tree-based ones) distinguish extreme values better.</li>
-        <li><strong>Quantile transformed n_ingredients:</strong> We applied QuantileTransformer to n_ingredients, which spreads out frequent values and maps the distribution to follow a uniform one. This helps reduce skewness and improve the model’s ability to handle outliers or uneven distributions.</li>
+        <li><strong>Linearization of n_ingredients:</strong> We cubed n_ingredients. During our bivariate analysis, we checked that a quadratic transformation would fit the data better. Upon checking again, we found a cubic transformation to slightly fit the left end of the data better, which could improve prediction.</li>
       </ul>
     </p>
     <p>These choices are informed by the data-generating process:
@@ -563,7 +563,7 @@
       </ul>
     </p>
     <div class="table">
-      <table border="1" class="dataframe">
+    <table border="1" class="dataframe">
       <thead>
         <tr style="text-align: right;">
           <th></th>
@@ -572,7 +572,7 @@
           <th>CV R²</th>
           <th>Test R²</th>
           <th>Test MAE</th>
-          <th>Test MSE</th>
+          <th>Test RMSE</th>
         </tr>
       </thead>
       <tbody>
