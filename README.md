@@ -682,8 +682,15 @@
     </ul>
     <p>Test statistic: Difference in RMSE between groups</p>
     <p>p-value: [insert value]</p>
-    <p><strong>Conclusion:</strong> [insert conclusion about fairness]</p>
-    <div class="plot"><p><em>Insert fairness visualization here</em></p></div>
+    <p><strong>Conclusion:</strong></p>
+    <div class="plot">
+    <iframe 
+    src="plot/fairness.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
+    </div>
   </div>
 
 </body>
