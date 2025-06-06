@@ -39,25 +39,48 @@
       color: black !important;
     }
     /* Fixed sidebar */
-    .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* translucent black */
-    padding-top: 20px;
-    border-right: 1px solid #ccc;
+    .left-sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100vh;
+      background: #444;
+      color: white;
+      text-align: center;
+      padding-top: 20px;}
+    .right-sidebar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100vh;
+      background: #888;
+      color: white;
+      text-align: center;
+      padding-top: 20px;
     }
-    .sidebar a {
+    .left-sidebar a {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
     color: white;       /* white text */
     font-weight: bold;  /* bold text */
     }
-    .sidebar a:hover {
+    .left-sidebar a:hover {
     background-color: rgba(255, 255, 255, 0.2);
+    }
+    .right-sidebar img {
+      width: 50px;
+      height: 50px;
+      margin: 15px 0;
+      border-radius: 5px;
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+    .right-sidebar img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 5px white;
     }
     .content {
       margin-left: 220px; /* space for sidebar */
@@ -66,8 +89,7 @@
   </style>
 </head>
 <body>
-  
-  <div class="sidebar">
+  <div class="left-sidebar">
     <a href="#top">&#57398; Back to Top</a>
     <a href="#introduction">&#128075; Introduction</a>
     <a href="#data-cleaning">&#129529; Data Cleaning</a>
@@ -82,6 +104,12 @@
   </div>
   <div id="top"></div>
   <h1>&#129369; Recipe Ratings and Simplicity Analysis &#129368;</h1>
+
+  <div class="right-sidebar">
+    <a href="https://www.food.com/recipe/buttermilk-pancakes-66241">
+      <img source="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_960/v1/img/recipes/66/24/1/CiPfUQpLROOV2Bedo79z_buttermilk%2520pancakes%252066241-7.jpg">Buttermilk Pancakes</img>
+    </a>
+  </div>
 
   <div class="section" id="introduction">
     <h2>&#128075; Introduction</h2>
