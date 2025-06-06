@@ -73,7 +73,7 @@
     <a href="#data-cleaning">&#129529; Data Cleaning</a>
     <a href="#univariate-analysis">&#128202; Univariate Analysis</a>
     <a href="#bivariate-analysis">&#128200; Bivariate Analysis</a>
-    <a href="#missingness">Assessment of Missingness</a>
+    <a href="#missingness">&#128269; Assessment of Missingness</a>
     <a href="#hypothesis-testing">Hypothesis Testing</a>
     <a href="#prediction">Prediction</a>
     <a href="#baseline-model">Baseline Model</a>
@@ -378,10 +378,10 @@
   </div>
 
   <div class="section" id="missingness">
-    <h2>Assessment of Missingness</h2>
+    <h2>&#128269; Assessment of Missingness</h2>
     <p>Columns <code>rating</code>, <code>review</code>, and <code>description</code> have missing values.</p>
     <ul>
-      <li><strong>Rating:</strong> Likely NMAR – users who disliked a recipe might be less inclined to leave a rating.</li>
+      <li><strong>Rating:</strong> Likely NMAR – users who disliked a recipe might be less inclined to leave a rating. If there is a column where users input yes or no to the question "did you like this recipe," it could make this MAR. The missing rating could be because the user did not like the recipe and chose not to rate.</li>
       <li><strong>Review:</strong> Also likely NMAR – may correlate with user satisfaction or emotional investment.</li>
       <li><strong>Description:</strong> Likely MAR – possibly missing more often in simple recipes.</li>
     </ul>
