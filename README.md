@@ -73,7 +73,7 @@
     .right-sidebar img {
       width: 100%;
       height: 100px;
-      margin: 15px 0;
+      margin: 5px 0;
       border-radius: 5px;
       transition: transform 0.2s;
       cursor: pointer;
@@ -668,6 +668,7 @@
     <p>Improved RMSE: 0.7135</p>
     <p>Improved R²: 0.0010</p>
     <p>The two metrics we observed both had a slight improvement between the baseline model and the final model.
+  </div>
 
   <div class="section" id="fairness">
     <h2>Fairness Analysis</h2>
@@ -682,7 +683,6 @@
     <p>Test statistic: Difference in RMSE between groups</p>
     <p>p-value: [insert value]</p>
     <p><strong>Conclusion:</strong> [insert conclusion about fairness]</p>
-
     <div class="plot"><p><em>Insert fairness visualization here</em></p></div>
   </div>
 
