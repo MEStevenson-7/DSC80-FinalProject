@@ -44,8 +44,8 @@
       top: 0;
       left: 0;
       width: 200px;
-      height: 100vh;
-      background: #444;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
       color: white;
       text-align: center;
       padding-top: 20px;}
@@ -54,8 +54,8 @@
       top: 0;
       right: 0;
       width: 200px;
-      height: 100vh;
-      background: #888;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
       color: white;
       text-align: center;
       padding-top: 20px;
