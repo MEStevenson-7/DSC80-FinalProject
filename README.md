@@ -132,9 +132,7 @@
   <div class="section" id="introduction">
     <h2>&#128075; Introduction</h2>
     <p>Our dataset contains information on recipes including variables of interest such as minutes for each recipe, the number of reviews for each unique recipe, ratings (scored from 1-5), average ratings, and the number of steps to complete the recipe. We aim to investigate people’s preferences for different recipes using ratings as a proxy for preference, and how these preferences relate to the complexity of a recipe.</p>
-
     <p>We define complexity using the number of steps, time, and number of ingredients, with lower being easier and higher being more difficult. Our goal is to understand if people tend to prefer simpler (easier) recipes and whether these receive higher average ratings. This analysis may help identify high-quality, easy-to-make recipes that maximize satisfaction while minimizing effort.</p>
-
     <p>The dataset includes <strong>234,429</strong> rows (individual reviews of recipes) and 17 columns. We focus on 7 of these columns:</p>
     <ul>
       <li><code>id</code> (int): unique recipe ID</li>
