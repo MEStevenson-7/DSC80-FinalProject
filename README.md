@@ -420,6 +420,7 @@
     <ul>
       <li>Simple = fewer ingredients than dataset median</li>
       <li>Test statistic = difference in mean ratings</li>
+      <li>Significance level = 0.01</li>
       <li>Permutation test (1,000 iterations)</li>
       <li>One-sided test</li>
     </ul>
