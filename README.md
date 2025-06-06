@@ -74,7 +74,7 @@
     <a href="#univariate-analysis">&#128202; Univariate Analysis</a>
     <a href="#bivariate-analysis">&#128200; Bivariate Analysis</a>
     <a href="#missingness">&#128269; Assessment of Missingness</a>
-    <a href="#hypothesis-testing">Hypothesis Testing</a>
+    <a href="#hypothesis-testing">&#129514; Hypothesis Testing</a>
     <a href="#prediction">Prediction</a>
     <a href="#baseline-model">Baseline Model</a>
     <a href="#final-model">Final Model</a>
@@ -409,15 +409,13 @@
   </div>
 
   <div class="section" id="hypothesis-testing">
-    <h2>Hypothesis Testing</h2>
+    <h2>&#129514; Hypothesis Testing</h2>
     <p><strong>Question:</strong> Do simpler recipes (fewer ingredients) get higher ratings?</p>
-
     <h3>Hypotheses</h3>
     <ul>
       <li>H₀: No difference in average ratings between simple and complex recipes</li>
       <li>H₁: Simple recipes have higher average ratings</li>
     </ul>
-
     <h3>Test Setup</h3>
     <ul>
       <li>Simple = fewer ingredients than dataset median</li>
@@ -425,14 +423,20 @@
       <li>Permutation test (1,000 iterations)</li>
       <li>One-sided test</li>
     </ul>
-
     <h3>Results</h3>
+    <div class="plot">
+    <iframe 
+    src="plot/permutation_test.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
+    </div>
     <ul>
-      <li>Observed difference: 0.0072</li>
+      <li>Observed difference: 0.0086</li>
       <li>p-value: 0.0000</li>
     </ul>
-
-    <p><strong>Conclusion:</strong> Reject H₀. Simpler recipes have statistically higher average ratings, although effect size is small.</p>
+    <p><strong>Conclusion:</strong> Reject H₀. Simpler recipes seem to have statistically higher average ratings, although effect size is small.</p>
   </div>
 
   <div class="section" id="prediction">
