@@ -86,6 +86,14 @@
       margin-left: 220px; /* space for sidebar */
       padding: 20px;
     }
+    figure {
+      text-align: center;
+    }
+    figcaption {
+      font-size: 14px;
+      color: #ffffff;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
@@ -107,7 +115,10 @@
 
   <div class="right-sidebar">
     <a href="https://www.food.com/recipe/buttermilk-pancakes-66241">
+    <figure>
       <img src="img/pancakes.webp">
+      <figcaption>Buttermilk Pancakes</figcaption>
+    </figure>
     </a>
   </div>
 
