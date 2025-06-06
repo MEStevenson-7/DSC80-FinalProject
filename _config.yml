@@ -1,13 +1,14 @@
 title: Recipe Rating Relationship Analysis
 description: An exploration of recipe features and their relationship to user ratings.
-remote_theme: pages-themes/merlot@v0.2.0
+remote_theme: pages-themes/slate@v0.2.0
 plugins:
   - jekyll-remote-theme
 
-# Optional: hide GitHub banner (not needed for Merlot, but harmless)
+# Optional: hide GitHub banner (Slate doesn't show it by default)
 github:
   is_project_page: false
 
-# Optional: hide downloads button if shown
+# Optional: hide downloads button (if applicable)
 show_downloads: false
+
 
