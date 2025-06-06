@@ -45,7 +45,7 @@
       left: 0;
       width: 200px;
       height: 100%;
-      background: rgba(0, 0, 0, 0.6);
+      background: #1e1e1e;
       color: white;
       text-align: center;
       padding-top: 20px;}
