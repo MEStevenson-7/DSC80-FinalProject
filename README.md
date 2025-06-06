@@ -91,10 +91,15 @@
       text-align: center;
     }
     figcaption {
-      font-size: 10px;
+      font-size: 12px;
       color: #ffffff;
       margin-top: 0px;
       background-color:rgb(75, 75, 75);
+      border-radius: 15px;
+    }
+    figcaption:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 5px white;
     }
   </style>
 </head>
