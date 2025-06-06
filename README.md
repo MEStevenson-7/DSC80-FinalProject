@@ -53,11 +53,11 @@
       position: fixed;
       top: 0;
       right: 0;
-      width: 200px;
+      width: 250px;
       height: 100%;
       color: white;
       text-align: center;
-      padding-top: 20px;
+      padding-top: 10px;
     }
     .left-sidebar a {
     display: block;
