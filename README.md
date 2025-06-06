@@ -419,9 +419,9 @@
     <h3>Test Setup</h3>
     <ul>
       <li>Simple = fewer ingredients than dataset median</li>
-      <li>Test statistic = difference in mean ratings</li>
-      <li>Significance level = 0.01</li>
-      <li>Permutation test (1,000 iterations)</li>
+      <li>Test statistic = difference in mean ratings. This would be the best test statistic to use since we are observing difference in means.</li>
+      <li>Significance level = 0.05. We want a 95% confidence level for the null hypothesis.</li>
+      <li>Permutation test (1,000 iterations). We used 1000 iterations for the permutation test because it provides a reliable estimate of the p-value with acceptable variability.</li>
       <li>One-sided test</li>
     </ul>
     <h3>Results</h3>
