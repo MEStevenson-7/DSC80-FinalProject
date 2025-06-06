@@ -75,7 +75,7 @@
     <a href="#bivariate-analysis">&#128200; Bivariate Analysis</a>
     <a href="#missingness">&#128269; Assessment of Missingness</a>
     <a href="#hypothesis-testing">&#129514; Hypothesis Testing</a>
-    <a href="#prediction">Prediction</a>
+    <a href="#prediction">&#128302; Prediction</a>
     <a href="#baseline-model">Baseline Model</a>
     <a href="#final-model">Final Model</a>
     <a href="#fairness">Fairness</a>
@@ -441,17 +441,13 @@
   </div>
 
   <div class="section" id="prediction">
-    <h2>Framing a Prediction Problem</h2>
-
+    <h2>&#128302; Framing a Prediction Problem</h2>
     <h3>Prediction Type</h3>
     <p>Regression problem — predicting numerical <code>rating</code>.</p>
-
     <h3>Target Variable</h3>
     <p><code>rating</code>: numerical score (1–5) given by users.</p>
-
     <h3>Evaluation Metric</h3>
     <p>Root Mean Squared Error (RMSE) — penalizes large errors, interpretable in same units.</p>
-
     <h3>Features Used (No Leakage)</h3>
     <ul>
       <li><code>minutes</code></li>
