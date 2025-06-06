@@ -205,7 +205,7 @@
   <div class="section" id="bivariate-analysis">
     <h2>&#128200; Bivariate Analysis</h2>
     <h3>Number of Ingredients vs. Rating</h3>
-    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
+    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better.</p>
     <div class="plot">
     <iframe 
     src="plot/ing_rating.html"
@@ -215,7 +215,7 @@
     ></iframe>
     </div>
     <h3>Minutes vs. Rating</h3>
-    <p>There does not seem to be a correlation between minutes and rating.</p>
+    <p>There does not seem to be a correlation between minutes and rating. </p>
     <div class="plot">
     <iframe 
     src="plot/min_rating.html"
@@ -281,7 +281,7 @@
 </table>
     </div>
     <h4>Pivot Table: Number of Ingredients vs. Ratings</h4>
-    <p>Similarly, ingredient count shows no consistent correlation with rating.</p>
+    <p>Similarly, ingredient count shows no consistent correlation with rating. However, there seems to be a quadratic relation with the minimum rating occuring between 8 to 10 ingredients.</p>
     <div class="table">
     <table border="1" class="dataframe">
   <thead>
