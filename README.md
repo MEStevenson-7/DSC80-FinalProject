@@ -71,7 +71,7 @@
     <a href="#top">&#57398; Back to Top</a>
     <a href="#introduction">&#128075; Introduction</a>
     <a href="#data-cleaning">&#129529; Data Cleaning</a>
-    <a href="#univariate-analysis">&#128202; Univariate Analysis</a>
+    <a href="#univariate-analysis">&#128201; Univariate Analysis</a>
     <a href="#bivariate-analysis">&#128200; Bivariate Analysis</a>
     <a href="#missingness">&#128269; Assessment of Missingness</a>
     <a href="#hypothesis-testing">&#129514; Hypothesis Testing</a>
@@ -169,7 +169,7 @@
   </div>
 
   <div class="section" id="univariate-analysis">
-    <h2>&#128202; Univariate Analysis</h2>
+    <h2>&#128201; Univariate Analysis</h2>
     <h3>Distribution of Minutes</h3>
     <p>The distribution is heavily concentrated on lower values with the mode being much less than the mean. It seems most recipes take less time than the mean, while some outliers skew the mean to the right.</p>
     <div class="plot">
