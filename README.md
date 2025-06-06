@@ -116,13 +116,13 @@
   <h1>&#129369; Recipe Ratings and Simplicity Analysis &#129368;</h1>
 
   <div class="right-sidebar">
-    <a href="https://www.food.com/recipe/buttermilk-pancakes-66241">
+    <a href="https://www.food.com/recipe/buttermilk-pancakes-66241" style="text-decoration: none;">
     <figure>
       <img src="img/pancakes.webp">
       <figcaption>Buttermilk Pancakes</figcaption>
     </figure>
     </a>
-    <a href="https://www.food.com/recipe/creamy-cajun-chicken-pasta-39087#gallery">
+    <a href="https://www.food.com/recipe/creamy-cajun-chicken-pasta-39087#gallery" style="text-decoration: none;">
     <figure>
       <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/39/08/7/VPeSMiYHRce4BWsyj7Nl_0S9A5582.jpg">
       <figcaption>Creamy Cajun Chicken Pasta</figcaption>
