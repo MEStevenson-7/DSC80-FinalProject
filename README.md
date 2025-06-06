@@ -556,7 +556,56 @@
         <li><strong>Quantile transformed n_ingredients:</strong> We applied QuantileTransformer to n_ingredients, which spreads out frequent values and maps the distribution to follow a uniform one. This helps reduce skewness and improve the model’s ability to handle outliers or uneven distributions.</li>
       </ul>
     </p>
-    <p>Rationale: These features better capture non-linear effects and interactions.</p>
+    <p>These choices are informed by the data-generating process:
+      <ul>
+        <li>The number of ingredients and prep time (minutes) are not uniformly distributed, which makes them harder for models to interpret directly.</li>
+        <li>These features plausibly affect recipe rating — longer or overly complex recipes may deter high ratings, and ingredients influence complexity as well.</li>
+      </ul>
+    </p>
+    <div class="table">
+      <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th></th>
+          <th>Model</th>
+          <th>Best Params</th>
+          <th>CV R²</th>
+          <th>Test R²</th>
+          <th>Test MAE</th>
+          <th>Test MSE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>2</th>
+          <td>RandomForest</td>
+          <td>{'regressor__max_depth': 7, 'regressor__n_estimators': 46}</td>
+          <td>0.001439</td>
+          <td>0.000994</td>
+          <td>0.495402</td>
+          <td>0.509087</td>
+        </tr>
+        <tr>
+          <th>1</th>
+          <td>DecisionTree</td>
+          <td>{'regressor__max_depth': 7, 'regressor__min_samples_split': 8}</td>
+          <td>0.001391</td>
+          <td>0.000960</td>
+          <td>0.495392</td>
+          <td>0.509105</td>
+        </tr>
+        <tr>
+          <th>0</th>
+          <td>LinearRegression</td>
+          <td>{}</td>
+          <td>NaN</td>
+          <td>0.000839</td>
+          <td>0.496017</td>
+          <td>0.509166</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
     <p>Hyperparameter tuning via [e.g. GridSearchCV].</p>
     <p>Improved RMSE: [insert new value]</p>
     <div class="plot"><p><em>Insert model performance plot here</em></p></div>
