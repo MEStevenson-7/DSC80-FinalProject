@@ -76,8 +76,8 @@
     <a href="#missingness">&#128269; Assessment of Missingness</a>
     <a href="#hypothesis-testing">&#129514; Hypothesis Testing</a>
     <a href="#prediction">&#128302; Prediction</a>
-    <a href="#baseline-model">Baseline Model</a>
-    <a href="#final-model">Final Model</a>
+    <a href="#baseline-model">&#128218; Baseline Model</a>
+    <a href="#final-model">&#128202; Final Model</a>
     <a href="#fairness">Fairness</a>
   </div>
   <div id="top"></div>
@@ -205,7 +205,7 @@
   <div class="section" id="bivariate-analysis">
     <h2>&#128200; Bivariate Analysis</h2>
     <h3>Number of Ingredients vs. Rating</h3>
-    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better.</p>
+    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
     <div class="plot">
     <iframe 
     src="plot/ing_rating.html"
@@ -458,14 +458,14 @@
   </div>
 
   <div class="section" id="baseline-model">
-    <h2>Baseline Model</h2>
+    <h2>&#128218; Baseline Model</h2>
     <p>Model used: Linear Regression with 3 quantitative features. All features were already numeric, no encoding required.</p>
     <p>Performance: RMSE = [insert value here]</p>
     <p>Model is a reasonable baseline; interpretability and simplicity are advantages, but it may underfit.</p>
   </div>
 
   <div class="section" id="final-model">
-    <h2>Final Model</h2>
+    <h2>&#128202; Final Model</h2>
     <p>Final model used: [e.g. Random Forest, Gradient Boosting]</p>
     <p>New features added: [e.g. interaction terms, polynomial transformations]</p>
     <p>Rationale: These features better capture non-linear effects and interactions.</p>
