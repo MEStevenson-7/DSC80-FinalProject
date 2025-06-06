@@ -107,7 +107,8 @@
 
   <div class="right-sidebar">
     <a href="https://www.food.com/recipe/buttermilk-pancakes-66241">
-      <img source="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_960/v1/img/recipes/66/24/1/CiPfUQpLROOV2Bedo79z_buttermilk%2520pancakes%252066241-7.jpg">Buttermilk Pancakes</img>
+      <img source="img/pancakes.webp">Buttermilk Pancakes
+      </img>
     </a>
   </div>
 
