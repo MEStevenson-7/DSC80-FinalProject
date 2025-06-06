@@ -171,7 +171,7 @@
   <div class="section" id="univariate-analysis">
     <h2>&#128202; Univariate Analysis</h2>
     <h3>Distribution of Minutes</h3>
-    <p>The distribution is heavily concentrated on lower values with the mode being much less than the mean. It seems most recipes take less time than the mean, while some outliers taking much more time.</p>
+    <p>The distribution is heavily concentrated on lower values with the mode being much less than the mean. It seems most recipes take less time than the mean, while some outliers skew the mean to the right.</p>
     <div class="plot">
     <iframe 
     src="plot/mins_distribution.html"
@@ -205,10 +205,19 @@
   <div class="section" id="bivariate-analysis">
     <h2>&#128200; Bivariate Analysis</h2>
     <h3>Number of Ingredients vs. Rating</h3>
-    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
+    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
     <div class="plot">
     <iframe 
     src="plot/ing_rating.html"
+    width="100%"
+    height="600"
+    frameborder="0"
+    ></iframe>
+    </div>
+    <p>Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
+    <div class="plot">
+    <iframe 
+    src="plot/ing_rating2.html"
     width="100%"
     height="600"
     frameborder="0"
