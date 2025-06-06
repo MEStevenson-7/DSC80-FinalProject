@@ -93,6 +93,7 @@
       font-size: 10px;
       color: #ffffff;
       margin-top: 0px;
+      background-color:rgb(75, 75, 75);
     }
   </style>
 </head>
