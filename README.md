@@ -53,7 +53,7 @@
       position: fixed;
       top: 0;
       right: 0;
-      width: 200px;
+      width: 300px;
       height: 100%;
       color: white;
       text-align: center;
@@ -695,6 +695,6 @@
     <p><strong>p-value:</strong> 0.0000</p>
     We reject the null in favor of the alternative hypothesis. It seems there may be a difference in prediction error between groups.
   </div>
-  
+
 </body>
 </html>
