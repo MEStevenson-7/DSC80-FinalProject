@@ -92,7 +92,7 @@
     figcaption {
       font-size: 14px;
       color: #ffffff;
-      margin-top: 5px;
+      margin-top: 0px;
     }
   </style>
 </head>
