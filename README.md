@@ -72,7 +72,7 @@
     }
     .right-sidebar img {
       width: 100%;
-      height: 100%;
+      height: 100px;
       margin: 15px 0;
       border-radius: 5px;
       transition: transform 0.2s;
