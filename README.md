@@ -55,7 +55,6 @@
       right: 0;
       width: 200px;
       height: 100%;
-      background: rgba(0, 0, 0, 0.6);
       color: white;
       text-align: center;
       padding-top: 20px;
@@ -68,7 +67,8 @@
     font-weight: bold;  /* bold text */
     }
     .left-sidebar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+      transform: scale(1.1);
+      box-shadow: 0 0 5px white;
     }
     .right-sidebar img {
       width: 100%;
@@ -83,7 +83,7 @@
       box-shadow: 0 0 5px white;
     }
     .content {
-      margin-left: 220px; /* space for sidebar */
+      margin-left: 220px; 
       padding: 20px;
     }
     figure {
