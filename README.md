@@ -92,7 +92,7 @@
     }
     figcaption {
       font-size: 12px;
-      color: #ffffff;
+      color:rgb(52, 52, 52);
       margin-top: 0px;
       background-color:rgb(108, 194, 255);
       border-radius: 15px;
