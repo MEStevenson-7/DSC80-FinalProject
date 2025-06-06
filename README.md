@@ -667,7 +667,7 @@
     </p>
     <p>Improved RMSE: 0.7135</p>
     <p>Improved R²: 0.0010</p>
-    <p>The two metrics we observed both had a slight improvement between the baseline model and the final model.
+    <p>The two metrics we observed both had a slight improvement between the baseline model and the final model.</p>
   </div>
 
   <div class="section" id="fairness">
