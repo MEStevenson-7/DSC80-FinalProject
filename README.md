@@ -456,8 +456,10 @@
     <p>Regression problem — predicting numerical <code>rating</code>.</p>
     <h3>Target Variable</h3>
     <p><code>rating</code>: numerical score (1–5) given by users.</p>
+    <p>We chose rating because it is a direct, quantifiable measure of user satisfaction, and predicting it allows us to understand what makes a recipe more or less appealing to users. This connects well with our central theme of exploring how recipe characteristics (such as simplicity) relate to user preferences.</p>
     <h3>Evaluation Metric</h3>
-    <p>Root Mean Squared Error (RMSE) — penalizes large errors, interpretable in same units.</p>
+    <p>R² — penalizes large errors, interpretable in same units.</p>
+    <p>We chose RMSE over metrics like Mean Absolute Error (MAE) or R² because RMSE is particularly helpful when we want to emphasize minimizing large individual prediction errors, which could reflect particularly poor model performance on certain types of recipes.</p>
     <h3>Features Used (No Leakage)</h3>
     <ul>
       <li><code>minutes</code></li>
