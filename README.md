@@ -677,11 +677,11 @@
     <p><strong>Metric:</strong> Mean predicted rating</p>
     <p><strong>Hypotheses:</strong></p>
     <ul>
-      <li>H₀: No difference in prediction accuracy or error across groups</li>
-      <li>H₁: Prediction error is systematically different between groups</li>
+      <li>H₀: No difference in prediction accuracy or error across groups.</li>
+      <li>H₁: Prediction error is systematically different between groups.</li>
     </ul>
-    <p>Test statistic: Difference in RMSE between groups</p>
-    <p>p-value: [insert value]</p>
+    <p><strong>Test statistic:</strong> Difference in RMSE between groups.</p>
+    <p><strong>Significance level:</strong> 0.05</p>
     <p><strong>Conclusion:</strong></p>
     <div class="plot">
     <iframe 
@@ -691,6 +691,9 @@
     frameborder="0"
     ></iframe>
     </div>
+    <p><strong>Actual RMSE difference:</strong> 0.0663</p>
+    <p><strong>p-value:</strong> 0.0000</p>
+    We reject the null in favor of the alternative hypothesis. It seems there may be a difference in prediction error between groups.
   </div>
 
 </body>
