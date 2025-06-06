@@ -123,14 +123,26 @@
   <div class="right-sidebar">
     <a href="https://www.food.com/recipe/buttermilk-pancakes-66241" style="text-decoration: none;">
     <figure>
-      <img src="img/pancakes.webp">
+      <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_960/v1/img/recipes/66/24/1/CiPfUQpLROOV2Bedo79z_buttermilk%2520pancakes%252066241-7.jpg">
       <figcaption>Buttermilk Pancakes</figcaption>
+    </figure>
+    </a>
+    <a href="https://www.food.com/recipe/onigiri-japanese-rice-balls-8624" style="text-decoration: none;">
+    <figure>
+      <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/86/24/F5ccjMkFReC48UQ4jfew_0S9A8582.jpg">
+      <figcaption>Onigiri</figcaption>
     </figure>
     </a>
     <a href="https://www.food.com/recipe/creamy-cajun-chicken-pasta-39087#gallery" style="text-decoration: none;">
     <figure>
       <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_iw/v1/img/recipes/39/08/7/VPeSMiYHRce4BWsyj7Nl_0S9A5582.jpg">
       <figcaption>Creamy Cajun Chicken Pasta</figcaption>
+    </figure>
+    </a>
+    <a href="https://www.food.com/recipe/sangria-shortcakes-538531" style="text-decoration: none;">
+    <figure>
+      <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_960/v1/img/recipes/53/85/31/wNert6lMRSaCPeoyrCav_0S9A0215.jpg">
+      <figcaption>Sangria Shortcakes</figcaption>
     </figure>
     </a>
   </div>
