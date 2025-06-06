@@ -53,7 +53,7 @@
       position: fixed;
       top: 0;
       right: 0;
-      width: 300px;
+      width: 200px;
       height: 100%;
       color: white;
       text-align: center;
