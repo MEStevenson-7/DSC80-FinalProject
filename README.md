@@ -458,8 +458,17 @@
     <p><code>rating</code>: numerical score (1–5) given by users.</p>
     <p>We chose rating because it is a direct, quantifiable measure of user satisfaction, and predicting it allows us to understand what makes a recipe more or less appealing to users. This connects well with our central theme of exploring how recipe characteristics (such as simplicity) relate to user preferences.</p>
     <h3>Evaluation Metric</h3>
-    <p>R² — penalizes large errors, interpretable in same units.</p>
-    <p>We chose RMSE over metrics like Mean Absolute Error (MAE) or R² because RMSE is particularly helpful when we want to emphasize minimizing large individual prediction errors, which could reflect particularly poor model performance on certain types of recipes.</p>
+    <p>Root Mean Squared Error (RMSE) — penalizes large errors, interpretable in same units.</p>
+    <p>To evaluate our models, we used the R², which measures the proportion of variance in the target variable that is explained by the model’s features. It ranges from 0 to 1 (or negative if the model is worse than a baseline).</p>
+    <p>We chose R² over other metrics such as Mean Squared Error (MSE) or Mean Absolute Error (MAE) for model comparison because:
+    <ul>
+	    <li>R² is scale-independent, making it easier to interpret across different versions of the model.</li>
+		  <li>It provides an intuitive understanding of how much of the variation in rating is explained by the features.</li>
+	    <li>Unlike MAE or MSE, which report error magnitudes, R² helps determine relative model performance — higher R² means better explanatory power.</li>
+	    <li>R² is commonly used for comparing regression models on the same target variable, which was central to our goal of choosing the best model from several candidates.</li>
+    </ul>
+    We still reported MAE and MSE during evaluation to supplement our understanding of model error, but R² served as the primary metric for determining which model was most effective.</p>
+    <p>We used RMSE over metrics like Mean Absolute Error (MAE) or R² because RMSE is particularly helpful when we want to emphasize minimizing large individual prediction errors, which could reflect particularly poor model performance on certain types of recipes.</p>
     <h3>Features Used (No Leakage)</h3>
     <ul>
       <li><code>minutes</code></li>
