@@ -539,7 +539,7 @@
     </div>
     <p>Interpretation:
     <ul>
-      <li>The R² Score of 0.0034 suggests that the model explains less than 1% of the variance in recipe ratings, indicating very weak predictive power.</li>
+      <li>The R² Score of 0.0008 suggests that the model explains less than 1% of the variance in recipe ratings, indicating very weak predictive power.</li>
       <li>While the MAE of ~0.5 suggests that on average the model’s predictions are within half a star of the actual rating, this is only slightly better than always predicting the mean rating.</li>
       <li>These results suggest that our current model is not particularly good.</li>
     </ul>
@@ -549,12 +549,16 @@
 
   <div class="section" id="final-model">
     <h2>&#128202; Final Model</h2>
-    <p>Final model used: [e.g. Random Forest, Gradient Boosting]</p>
-    <p>New features added: [e.g. interaction terms, polynomial transformations]</p>
+    <p>Final model used: RandomForest</p>
+    <p>New features added: 
+      <ul>
+        <li><strong>Standard scaled minutes:</strong> We applied StandardScaler to normalize the minutes column. This transformation centers the data to have mean 0 and variance 1, which can help many models (especially tree-based ones) distinguish extreme values better.</li>
+        <li><strong>Quantile transformed n_ingredients:</strong> We applied QuantileTransformer to n_ingredients, which spreads out frequent values and maps the distribution to follow a uniform one. This helps reduce skewness and improve the model’s ability to handle outliers or uneven distributions.</li>
+      </ul>
+    </p>
     <p>Rationale: These features better capture non-linear effects and interactions.</p>
     <p>Hyperparameter tuning via [e.g. GridSearchCV].</p>
     <p>Improved RMSE: [insert new value]</p>
-
     <div class="plot"><p><em>Insert model performance plot here</em></p></div>
   </div>
 
