@@ -58,7 +58,7 @@
       height: 100%;
       color: white;
       text-align: center;
-      padding-top: 10px;
+      padding-top: 20px;
     }
     .left-sidebar a {
     display: block;
