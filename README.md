@@ -107,8 +107,7 @@
 
   <div class="right-sidebar">
     <a href="https://www.food.com/recipe/buttermilk-pancakes-66241">
-      <img source="img/pancakes.webp">Buttermilk Pancakes
-      </img>
+      <img src="img/pancakes.webp">Buttermilk Pancakes</img>
     </a>
   </div>
 
@@ -651,9 +650,11 @@
         </li>
         <li><strong>LinearRegression:</strong> none</li> 
       </ul>
+      RandomForest performed the best out of the three modeling algorithms.
     </p>
-    <p>Improved RMSE: [insert new value]</p>
-    <div class="plot"><p><em>Insert model performance plot here</em></p></div>
+    <p>Improved RMSE: 0.7135</p>
+    <p>Improved R²: 0.0010</p>
+    <p>The two metrics we observed both had a slight improvement between the baseline model and the final model.
   </div>
 
   <div class="section" id="fairness">
