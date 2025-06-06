@@ -105,7 +105,7 @@
 </head>
 <body>
   <div class="left-sidebar">
-    <h2 style="margin-top: 0; text-align: center;">Directory:</h2>
+    <h4 style="margin-top: 0; text-align: center; color: #ffffff;">Directory:</h4>
     <a href="#top">🏠 Back to Top</a>
     <a href="#introduction">&#128075; Introduction</a>
     <a href="#data-cleaning">&#129529; Data Cleaning</a>
@@ -122,7 +122,7 @@
   <h1>&#129369; Recipe Ratings and Simplicity Analysis &#129368;</h1>
 
   <div class="right-sidebar">
-    <h2 style="margin-top: 0; text-align: center;">Our Favorite Recipes:</h2>
+    <h4 style="margin-top: 0; text-align: center; color: #ffffff;">Our Favorite Recipes:</h4>
     <a href="https://www.food.com/recipe/buttermilk-pancakes-66241" style="text-decoration: none;">
     <figure>
       <img src="https://img.sndimg.com/food/image/upload/f_auto,c_thumb,q_55,w_960/v1/img/recipes/66/24/1/CiPfUQpLROOV2Bedo79z_buttermilk%2520pancakes%252066241-7.jpg">
