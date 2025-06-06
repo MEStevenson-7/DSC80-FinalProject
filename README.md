@@ -98,7 +98,7 @@
 </head>
 <body>
   <div class="left-sidebar">
-    <a href="#top">&#57398; Back to Top</a>
+    <a href="#top">🏠 Back to Top</a>
     <a href="#introduction">&#128075; Introduction</a>
     <a href="#data-cleaning">&#129529; Data Cleaning</a>
     <a href="#univariate-analysis">&#128201; Univariate Analysis</a>
@@ -672,8 +672,8 @@
 
   <div class="section" id="fairness">
     <h2>Fairness Analysis</h2>
-    <p><strong>Group X:</strong> Recipes with fewer than median ingredients</p>
-    <p><strong>Group Y:</strong> Recipes with greater than or equal to median ingredients</p>
+    <p><strong>Group X:</strong> Recipes with fewer than median ingredients.</p>
+    <p><strong>Group Y:</strong> Recipes with greater than or equal to median ingredients.</p>
     <p><strong>Metric:</strong> Mean predicted rating</p>
     <p><strong>Hypotheses:</strong></p>
     <ul>
