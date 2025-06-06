@@ -442,6 +442,7 @@
 
   <div class="section" id="prediction">
     <h2>&#128302; Framing a Prediction Problem</h2>
+    <p>We aim to predict the individual rating a user might give a recipe based on various observable features of that recipe. Understanding what factors contribute to higher or lower ratings can help us better assess recipe quality and user preferences, even before a recipe receives many reviews.</p>
     <h3>Prediction Type</h3>
     <p>Regression problem — predicting numerical <code>rating</code>.</p>
     <h3>Target Variable</h3>
