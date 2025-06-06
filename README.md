@@ -479,8 +479,71 @@
 
   <div class="section" id="baseline-model">
     <h2>&#128218; Baseline Model</h2>
-    <p>Model used: Linear Regression with 3 quantitative features. All features were already numeric, no encoding required.</p>
-    <p>Performance: RMSE = [insert value here]</p>
+    <p>Model used: Linear Regression with 3 quantitative features: number of ingredients, number of steps, and minutes. All features were already numeric, no encoding required.</p>
+    <div class='table'>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th>Feature Name</th>
+          <th>Type</th>
+          <th>Description</th>
+          <th>Transformation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>n_steps</td>
+          <td>Ordinal</td>
+          <td>number of steps in the recipe</td>
+          <td>binarized into "few" (≤5) vs. "many" (>5)</td>
+        </tr>
+        <tr>
+          <td>minutes</td>
+          <td>Ordinal</td>
+          <td>total time required to complete the recipe in minutes</td>
+          <td>binarized into "short" (≤30) vs. "long" (>30)</td>
+        </tr>
+        <tr>
+          <td>n_ingredients</td>
+          <td>Quantitative</td>
+          <td>number of ingredients in the recipe</td>
+          <td>no transformation</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Performance:</p>
+    <div class='table'>
+    <table border="1" class="dataframe">
+      <thead>
+        <tr style="text-align: right;">
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>Mean Absolute Error (MAE)</th>
+          <td>0.4960</td>
+        </tr>
+        <tr>
+          <th>Root Mean Squared Error (RMSE)</th>
+          <td>0.7136</td>
+        </tr>
+        <tr>
+          <th>R²</th>
+          <td>0.0008</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <p>Interpretation:
+    <ul>
+      <li>The R² Score of 0.0034 suggests that the model explains less than 1% of the variance in recipe ratings, indicating very weak predictive power.</li>
+      <li>While the MAE of ~0.5 suggests that on average the model’s predictions are within half a star of the actual rating, this is only slightly better than always predicting the mean rating.</li>
+      <li>These results suggest that our current model is not particularly good.</li>
+    </ul>
+    </p>
     <p>Model is a reasonable baseline; interpretability and simplicity are advantages, but it may underfit.</p>
   </div>
 
