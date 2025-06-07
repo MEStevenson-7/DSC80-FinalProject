@@ -271,7 +271,7 @@
   <div class="section" id="bivariate-analysis">
     <h2>&#128200; Bivariate Analysis</h2>
     <h3>Number of Ingredients vs. Rating</h3>
-    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
+    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a polynomial trend would fit the data better for predictions.</p>
     <div class="plot">
     <iframe 
     src="plot/ing_rating.html"
@@ -610,7 +610,7 @@
     <p>New features added: 
       <ul>
         <li><strong>Standard scaled minutes:</strong> We applied StandardScaler to normalize the minutes column. This transformation centers the data to have mean 0 and variance 1, which can help many models (especially tree-based ones) distinguish extreme values better.</li>
-        <li><strong>Linearization of n_ingredients:</strong> We cubed n_ingredients. During our bivariate analysis, we checked that a quadratic transformation would fit the data better. Upon checking again, we found a cubic transformation to slightly fit the left end of the data better, which could improve prediction.</li>
+        <li><strong>Linearization of n_ingredients:</strong> We cubed n_ingredients. During our bivariate analysis, we mentioned that a polynomial transformation would fit the data better. We will implement that transformation here by cubing n_ingredients.</li>
       </ul>
     </p>
     <p>These choices are informed by the data-generating process:
@@ -707,7 +707,7 @@
     frameborder="0"
     ></iframe>
     </div>
-    <p><strong>Actual RMSE difference:</strong> 0.0663</p>
+    <p><strong>Actual RMSE difference:</strong> 0.0664</p>
     <p><strong>p-value:</strong> 0.0000</p>
     We reject the null in favor of the alternative hypothesis. It seems there may be a difference in prediction error between groups.
   </div>
