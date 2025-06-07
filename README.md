@@ -271,7 +271,7 @@
   <div class="section" id="bivariate-analysis">
     <h2>&#128200; Bivariate Analysis</h2>
     <h3>Number of Ingredients vs. Rating</h3>
-    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings.</p>
+    <p>This plot shows a slight positive trend: recipes with more ingredients tend to receive higher average ratings. Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
     <div class="plot">
     <iframe 
     src="plot/ing_rating.html"
@@ -280,7 +280,6 @@
     frameborder="0"
     ></iframe>
     </div>
-    <p>Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
     <div class="plot">
     <iframe 
     src="plot/ing_rating_squared.html"
