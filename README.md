@@ -645,29 +645,29 @@
         <tr>
           <th>2</th>
           <td>RandomForest</td>
-          <td>{'regressor__max_depth': 7, 'regressor__n_estimators': 46}</td>
-          <td>0.001439</td>
-          <td>0.000994</td>
-          <td>0.495402</td>
-          <td>0.713504</td>
+          <td>{'regressor__max_depth': 5, 'regressor__n_estimators': 25}</td>
+          <td>0.001523</td>
+          <td>0.001463</td>
+          <td>0.495351</td>
+          <td>0.713336</td>
         </tr>
         <tr>
           <th>1</th>
           <td>DecisionTree</td>
-          <td>{'regressor__max_depth': 7, 'regressor__min_samples_split': 8}</td>
-          <td>0.001391</td>
-          <td>0.000960</td>
-          <td>0.495392</td>
-          <td>0.713516</td>
+          <td>{'regressor__max_depth': 5, 'regressor__min_samples_split': 2}</td>
+          <td>0.001361</td>
+          <td>0.001349</td>
+          <td>0.495357</td>
+          <td>0.713377</td>
         </tr>
         <tr>
           <th>0</th>
           <td>LinearRegression</td>
           <td>{}</td>
           <td>NaN</td>
-          <td>0.000839</td>
-          <td>0.496017</td>
-          <td>0.713559</td>
+          <td>0.001071</td>
+          <td>0.495879</td>
+          <td>0.713476</td>
         </tr>
       </tbody>
     </table>
@@ -676,22 +676,22 @@
       <ul>
         <li><strong>RandomForest:</strong>
         <ul>
-          <li>max depth: 7</li>
-          <li>number of estimators: 46</li>
+          <li>max depth: 5</li>
+          <li>number of estimators: 25</li>
         </ul>
         </li>
         <li><strong>DecisionTree:</strong>
         <ul>
-          <li>max depth: 7</li>
-          <li>minimum samples split: 8</li>
+          <li>max depth: 5</li>
+          <li>minimum samples split: 2</li>
         </ul>
         </li>
         <li><strong>LinearRegression:</strong> none</li> 
       </ul>
       RandomForest performed the best out of the three modeling algorithms.
     </p>
-    <p>Improved RMSE: 0.7135</p>
-    <p>Improved R²: 0.0010</p>
+    <p>Improved RMSE: 0.7133</p>
+    <p>Improved R²: 0.0015</p>
     <p>The two metrics we observed both had a slight improvement between the baseline model and the final model.</p>
   </div>
 
