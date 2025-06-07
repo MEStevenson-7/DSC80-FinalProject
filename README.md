@@ -283,7 +283,7 @@
     <p>Although we used a linear trend to describe the correlation, a quadratic trend would fit the data better for predictions.</p>
     <div class="plot">
     <iframe 
-    src="plot/ing_rating2.html"
+    src="plot/ing_rating_squared.html"
     width="100%"
     height="600"
     frameborder="0"
