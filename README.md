@@ -280,14 +280,6 @@
     frameborder="0"
     ></iframe>
     </div>
-    <div class="plot">
-    <iframe 
-    src="plot/ing_rating_squared.html"
-    width="100%"
-    height="600"
-    frameborder="0"
-    ></iframe>
-    </div>
     <h3>Minutes vs. Rating</h3>
     <p>There does not seem to be a correlation between minutes and rating. </p>
     <div class="plot">
